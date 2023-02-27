@@ -10,7 +10,11 @@
     {{ghost_head}}
 </head>
 
+{{#is "home"}}
+<body class="post-template home-template-alt is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{plural pagination.pages empty="" singular=" no-pagination" plural=""}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
+{{else }}
 <body class="{{body_class}} is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{plural pagination.pages empty="" singular=" no-pagination" plural=""}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
+{{/is}}
 <div class="gh-site">
 
     <header id="gh-head" class="gh-head gh-outer">
