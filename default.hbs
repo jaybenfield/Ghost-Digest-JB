@@ -52,6 +52,8 @@
                     <div class="gh-head-members">
                         {{#unless @member}}
                             {{#unless @site.members_invite_only}}
+			    	<a class="gh-head-link" href="/page/2/">Archive</a>
+				<a class="gh-head-link" href="/jay">About</a>
                                 <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
                                 <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
                             {{else}}
@@ -72,8 +74,7 @@
     {{#unless @member}}
         <div class="gh-subscribe-wrapper gh-canvas">
             <section class="gh-subscribe">
-		<p><a href="/about">Jay Benfield</a> is a writer, musician, and developer living in the outermost sprawl of DC. benfield.org is his personal blog.</p>
-		<p class="nopad"><a href="#/portal/signup" data-portal="signup">Subscribe</a> to receive new posts by email and access to members-only content.</div>
+		    <p class="nopad">benfield.org is the growing wordpile of <a href="/jay">Jay Benfield</a>, human. <a href="#/portal/signup" data-portal="signup">Subscribe</a> to receive new posts by email and access to members-only content.</p></div>
             </section>
         </div>
     {{/unless}}
@@ -82,7 +83,7 @@
     <footer class="gh-foot gh-outer">
         <div class="gh-foot-inner gh-inner">
             <div class="gh-copyright">
-		    Copyright &copy; 2017-{{date format="YYYY"}} Jay Benfield | <a href="mailto:jay@benfield.org">Contact</a> | <a href="/about">About</a>
+		    Copyright &copy; 2017-{{date format="YYYY"}} Jay Benfield | <a href="mailto:jay@benfield.org">Contact</a>
             </div>
 
             <nav class="gh-foot-menu">
